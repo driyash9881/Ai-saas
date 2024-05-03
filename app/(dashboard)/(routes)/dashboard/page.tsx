@@ -13,14 +13,7 @@ const tools =[
         bgColor:"bg-violet-500/10",
         href:"/conversation"
     },
-    {
-        label:"Music Generation",
-        icon:Music,
-        color:"text-emerald-500",
-        bgColor:"bg-emerald-500/10",
-        href:"/music"
-    }
-    ,
+    
     {
         label:"Image Generation",
         icon:ImageIcon,
@@ -36,14 +29,8 @@ const tools =[
         bgColor:"bg-orange-700/10",
         href:"/vidoe"
     }
-    ,
-    {
-        label:"Code Generation",
-        icon:Code,
-        color:"text-green-500",
-        bgColor:"bg-green-700/10",
-        href:"/code"
-    }
+    
+   
 ]
 const DashboardPage = () =>{
  const  router=useRouter()
