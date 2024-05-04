@@ -42,7 +42,7 @@ const Text: React.FC = () => {
       });
       setImages(response.data.result);
     } catch (error) {
-      setError(error.message);
+      setError("error");
     } finally {
       setLoading(false);
     }
@@ -86,7 +86,7 @@ const Text: React.FC = () => {
               <div className="col-span-12 lg:col-span-10 ">
               <div className='col-span-12 lg:col-span-6'>
               <div className="m-0 p-0" > 
-        <input  className="border-0 outline-none p-4  w-[20rem] focus-visible:ring-0 focus-visible:ring-transparent" type="text"   placeholder='Type here ' type="text" value={text} onChange={(e) => setText(e.target.value)} />
+        <input  className="border-0 outline-none p-4  w-[20rem] focus-visible:ring-0 focus-visible:ring-transparent" type="text"   placeholder='Type here '  value={text} onChange={(e) => setText(e.target.value)} />
         </div></div></div>
         <Button className='col-span-12 lg:col-span-2 w-full' type="submit">Generate Images</Button>
       </form>
