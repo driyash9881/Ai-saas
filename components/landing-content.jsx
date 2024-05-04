@@ -3,26 +3,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const testimonials = [
-  {
+  { key:1,
     name: "Sheetal ",
     avatar: "S",
     title: "Software Developer",
     description: "This is the best application I've ever used!",
   },
-  {
+  {key:2,
     name: "Sagar",
     avatar: "S",
     title: "Student",
     description: "I use this daily for generating new photos!",
   },
-  {
+  {key:3,
     name: "Sonu",
     avatar: "M",
     title: "Student",
     description:
       "This app has changed my life, cannot imagine working without it!",
   },
-  {
+  {key:4,
     name: "Durgesh",
     avatar: "M",
     title: "CA",
