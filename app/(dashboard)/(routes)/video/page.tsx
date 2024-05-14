@@ -12,6 +12,7 @@ interface Video {
 }
 
 const VideoGenerator: React.FC = () => {
+  
   const [text, setText] = useState<string>('');
   const [videos, setVideos] = useState<Video[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);

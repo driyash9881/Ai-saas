@@ -27,7 +27,7 @@ const tools =[
         icon:VideoIcon,
         color:"text-orange-500",
         bgColor:"bg-orange-700/10",
-        href:"/vidoe"
+        href:"/video"
     }
     
    

@@ -13,6 +13,7 @@ interface Image {
 }
 
 const Text: React.FC = () => {
+  
   const [text, setText] = useState<string>('');
   const [images, setImages] = useState<Image[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
