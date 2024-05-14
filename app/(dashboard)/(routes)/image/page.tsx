@@ -37,7 +37,7 @@ const Text: React.FC = () => {
       }, {
         headers: {
           'content-type': 'application/json',
-          'X-RapidAPI-Key': 'e2150b805emsh9bee4dba3e5d826p1e3bcfjsncab6fa36e2b4',
+          'X-RapidAPI-Key': process.env.NEXT_PUBLIC_API_KEY,
           'X-RapidAPI-Host': 'google-api31.p.rapidapi.com'
         }
       });
@@ -68,7 +68,7 @@ const Text: React.FC = () => {
       <Heading
         title="Image Generation"
         description="Turn your prompt into an image."
-        icon={ImageIcon}
+        Icon={ImageIcon}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
       />

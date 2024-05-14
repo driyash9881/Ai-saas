@@ -8,7 +8,7 @@ import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 interface HeadingProps {
   title: string;
   description: string;
-  icon: Icon;
+  Icon: icon;
   iconColor?: string;
   bgColor?: string;
 }
@@ -17,7 +17,7 @@ interface HeadingProps {
 export const Heading=({
     title,
     description,
-    icon :Icon,
+    Icon :Icon,
     iconColor,
     bgColor,
 }: HeadingProps)=>{

@@ -8,6 +8,7 @@ import { MessageSquare } from 'lucide-react';
 import { Loader } from '@/components/loader';
 
 
+
 const Text: React.FC = () => {
   const [userMessage, setUserMessage] = useState<string>('');
   const [botResponse, setBotResponse] = useState<string>('');
@@ -16,7 +17,7 @@ const Text: React.FC = () => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setUserMessage(event.target.value);
   };
-
+   
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
@@ -25,7 +26,7 @@ const Text: React.FC = () => {
       url: 'https://chatgpt-42.p.rapidapi.com/conversationgpt4',
       headers: {
         'content-type': 'application/json',
-        'X-RapidAPI-Key':"e2150b805emsh9bee4dba3e5d826p1e3bcfjsncab6fa36e2b4",
+        'X-RapidAPI-Key':process.env.NEXT_PUBLIC_API_KEY,
         'X-RapidAPI-Host': 'chatgpt-42.p.rapidapi.com'
       },
       data: {
@@ -62,7 +63,7 @@ const Text: React.FC = () => {
       <Heading
         title="Conversation"
         description="Our most advanced conversation model"
-        icon={MessageSquare}
+        Icon={MessageSquare}
         iconColor="text-violet-500"
         bgColor="bg-violet-500/10"
       />

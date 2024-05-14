@@ -31,7 +31,7 @@ const VideoGenerator: React.FC = () => {
       url: 'https://google-api31.p.rapidapi.com/videosearch',
       headers: {
         'content-type': 'application/json',
-        'X-RapidAPI-Key': 'e2150b805emsh9bee4dba3e5d826p1e3bcfjsncab6fa36e2b4',
+        'X-RapidAPI-Key':process.env.NEXT_PUBLIC_API_KEY,
         'X-RapidAPI-Host': 'google-api31.p.rapidapi.com',
       },
       data: {
@@ -61,7 +61,7 @@ const VideoGenerator: React.FC = () => {
       <Heading
         title="Video Generation"
         description="Turn your prompt into video."
-        icon={FileAudio}
+        Icon={FileAudio}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
       />
