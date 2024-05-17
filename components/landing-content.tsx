@@ -63,7 +63,6 @@ export const LandingContent: React.FC = () => {
                   </div>
                 </h3>
                 <div className="flex ">
-                  <div className="rounded border-slate-100 w-4 h-4 text-slate">{item.avatar}</div>
                   <div className="p-6 pt-4 px-0">{item.description}</div>
                 </div>
               </div>
