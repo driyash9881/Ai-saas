@@ -105,10 +105,10 @@ const Text: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
         {images.map((img, index) => (
-          <div>
+          <div key={img.image}>
           <Card key={img.image} className="rounded-lg overflow-hidden">
           <div className="relative aspect-square">
-          <img src={img.image} alt={`Image ${index}`} />
+          <img src={img.image} key={img.image} alt={`Image ${index}`} />
            </div>
            <CardFooter className="p-2">
                   <Button
