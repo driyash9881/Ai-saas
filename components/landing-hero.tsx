@@ -46,21 +46,21 @@ export const LandingHero = () => {
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: '9999px',
-              backgroundImage:
-                'linear-gradient(to right,var(--tw-gradient-stops))',
-              '--tw-gradient-from': '#6366f1 var(--tw-gradient-from-position)',
-              '--tw-gradient-stops':
-                'var(--tw-gradient-from),#a855f7 var(--tw-gradient-via-position),var(--tw-gradient-to)',
-              '--tw-gradient-to':
-                '#ec4899 var(--tw-gradient-to-position)',
+              // backgroundImage:
+              //   'linear-gradient(to right,var(--tw-gradient-stops))',
+              // '--tw-gradient-from': '#6366f1 var(--tw-gradient-from-position)',
+              // '--tw-gradient-stops':
+              //   'var(--tw-gradient-from),#a855f7 var(--tw-gradient-via-position),var(--tw-gradient-to)',
+              // '--tw-gradient-to':
+              //   '#ec4899 var(--tw-gradient-to-position)',
               padding: '1rem',
               fontSize: '.875rem',
               lineHeight: '1.25rem',
               fontWeight: '600',
-              '--tw-text-opacity': 1,
+              // '--tw-text-opacity': 1,
               color: 'rgb(255 255 255/var(--tw-text-opacity))',
-              '--tw-ring-offset-color':
-                'hsl(var(--background))',
+              // '--tw-ring-offset-color':
+                // 'hsl(var(--background))',
               transitionProperty:
                 'color,background-color,border-color,text-decoration-color,fill,stroke',
               transitionTimingFunction:
