@@ -1,14 +1,11 @@
 import { XIcon } from "lucide-react";
-
-
 import { cn } from "@/lib/utils";
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 
 
 interface HeadingProps {
   title: string;
   description: string;
-  Icon: icon;
+  Icon: XIcon;
   iconColor?: string;
   bgColor?: string;
 }
